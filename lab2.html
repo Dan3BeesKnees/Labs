@@ -1,0 +1,107 @@
+<html>
+
+<title>
+	Calculator
+</title>
+
+<script>
+function PreformMaths ()
+{
+	var MathsHelper = document.getElementById('Maths').value;
+
+	var FirstMathsEL = Number(document.getElementById('FirstMAths').value);
+	
+	var SecondMathsEL = Number(document.getElementById('SecondMAths').value);
+	
+	var TotalMathsEL = document.getElementById('FinalMath');
+	
+	
+
+	if (MathsHelper == 'Plus') 
+				{
+					TotalMathsEL.value = FirstMathsEL + SecondMathsEL;
+				}
+	else if (MathsHelper == 'Minus') 
+				{
+					TotalMathsEL.value = FirstMathsEL - SecondMathsEL;
+				}
+	else if (MathsHelper == 'Divide') 
+				{
+					TotalMathsEL.value = FirstMathsEL / SecondMathsEL;
+				}
+	else if (MathsHelper == 'Multiply') 
+				{
+					TotalMathsEL.value = FirstMathsEL * SecondMathsEL;
+				}
+	
+}
+</script>
+
+<style>
+
+body
+	{
+		background-image: url("http://readbuzz.com/wp-content/uploads/2014/04/o-DARK-SKY-WEEK-facebook.jpg");
+		color: Gainsboro;
+		font-size: 48px;
+		font-style: italic;
+		text-shadow: 5px 5px SlateGray;
+	}
+input
+	{
+		border: 6px ridge Wheat;
+		font-family: Comic Sans;
+		font-style: italic;
+		background-color: MintCream;
+		color: black;
+	}
+select
+	{
+		border: 6px ridge Wheat;
+		font-family: Comic Sans;
+		font-style: italic;
+		background-color: MintCream;
+		color: black;
+	}
+button
+	{
+		border: 6px ridge Wheat;
+		font-family: Comic Sans;
+		font-style: italic;
+		background-color: MintCream;
+		color: black;
+	}
+</style>
+
+<body>
+	<center>
+	
+		<h1>Calculator<h1>
+	
+		<input id="FirstMAths" type="number">
+
+		<select id="Maths">
+
+				<option value = "Plus">+</option>
+				<option value = "Minus">-</option>
+				<option value = "Divide">/</option>
+				<option value = "Multiply">*</option>
+
+		</select>
+
+			<input id="SecondMAths" type="number">
+			
+			<button onclick = "PreformMaths()">
+				=
+			</button >
+
+			<input id="FinalMath" type="number">
+
+
+
+	</center>
+</body>
+
+
+
+</html>

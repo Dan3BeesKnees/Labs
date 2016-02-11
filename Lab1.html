@@ -1,0 +1,83 @@
+<html>
+
+<script>
+
+	function sayHi()
+		{
+			
+			var FirstNameEL = document.getElementById('firstname');
+			
+			
+			var LastNameEL = document.getElementById('lastname');
+			
+			if (FirstNameEL.value =='') 
+				{
+					alert('Please Enter a First Name');
+				}
+			else if (LastNameEL.value =='')
+				{
+					alert('Please Enter a Last Name');
+				}
+			else
+				{
+					alert(FirstNameEL.value + "\r" + LastNameEL.value);
+				}
+			
+			
+		}
+
+
+</script>
+
+
+<head>
+	<title>
+		Lab1
+	</title>
+
+
+</head>
+
+
+<body>
+<center>
+	<h1> 
+		Lab 1 - Enter Your Name.
+	</h1>
+	
+	<label>
+		First Name: 
+		
+		<input id="firstname" type="text" placeholder = "Enter Your First Name">
+		
+	</label>
+	
+	<br/>
+	
+	<br/>
+	
+	<label>
+	
+		Last Name: 
+		
+		<input id="lastname" type="text" placeholder= "Enter Your Last Name">
+		
+	</label>
+	
+	
+	
+	</input>
+	
+	<br/>
+	
+	<br/>
+	
+	<button onclick= "sayHi()">
+		Enter
+	</button>
+	
+</center>
+
+</body>
+
+</html>
